@@ -1,0 +1,30 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+#cutId{
+    border: none;
+    border: 1px solid royalblue;
+    background-color: cornflowerblue;
+}
+
+#cutBtn{
+    border: none;
+    padding: 10px 20px;
+    background-color: blue;
+    font-size: 15px;
+    color: #fff;
+}
+
+#cutBtn:hover{
+    background-color: aquamarine;
+    color: #000;
+}
