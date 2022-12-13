@@ -1,0 +1,20 @@
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+
+.mainDiv{
+    width: 30%;
+    height: 200px;
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    
+}

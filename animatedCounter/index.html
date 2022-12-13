@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Animated Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="mainDiv">
+            <h2>Total Project</h2>
+            <h4 id="num"></h4>
+        </div>
+        
+    
+        <div class="mainDiv">
+            <h2>Total Client</h2>
+            <h4 id="num1"></h4>
+        </div>
+        
+    
+        <div class="mainDiv">
+            <h2>Total Project</h2>
+            <h4 id="num3"></h4>
+        </div>
+        
+    </div>
+
+
+
+    <script>
+     
+     var count = 0
+
+     var countNumber = setInterval(() => {      
+        count++;
+            var textSet = document.getElementById('num');
+            textSet.innerHTML = count
+
+            if(count == 200){
+                clearInterval(countNumber)
+            }
+     }, 10);
+
+    //  For Client
+
+    var count1 = 0;
+   
+    var clientSection = setInterval(() => {
+        
+        count1++;
+
+        var countNumber2 = document.getElementById('num1');
+        countNumber2.innerHTML = count1;
+
+        if(count1 == 200){
+            clearInterval(clientSection);
+        }
+    }, 10);
+
+
+
+
+    var count2 = 0;
+   
+   var achiveSection = setInterval(() => {
+       
+       count2++;
+
+       var countNumber3 = document.getElementById('num3');
+       countNumber3.innerHTML = count1;
+
+       if(count2 == 200){
+           clearInterval(achiveSection);
+       }
+   }, 10);
+
+
+
+
+     
+
+   
+
+
+
+
+
+
+     
+
+
+
+    </script>
+
+
+
+
+
+    
+</body>
+</html>
