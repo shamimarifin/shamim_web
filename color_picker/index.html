@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Color Picker</title>
+</head>
+<body>
+
+    <div class="container">
+        <h4 id="title">Welcome Bangladesh</h4>
+        <input type="text" name="hexaNumber" id="hexa">
+        <br> <br>
+        <input type="color" name="" id="color">
+    </div>
+
+
+    <script>
+
+        let inputText = document.querySelector('#hexa');
+        let colorPicker = document.querySelector('#color');
+
+        colorPicker.addEventListener('input' , ()=> {
+            
+            let colorCode = colorPicker.value
+
+            inputText.value = colorCode
+
+            document.querySelector('#title').style.color = colorCode
+
+            
+        })
+
+       
+    </script>
+
+
+
+    
+</body>
+</html>
